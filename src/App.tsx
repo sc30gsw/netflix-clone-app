@@ -1,9 +1,13 @@
+import { Banner } from "./components/Banner";
+import { Nav } from "./components/Nav";
 import { Row } from "./components/Row";
 import { requests } from "./request";
 
 const App = () => {
   return (
     <div>
+      <Nav />
+      <Banner />
       <Row
         title="NETFLIX ORIGINALS"
         fetchUrl={requests.feachNetflixOriginals}
